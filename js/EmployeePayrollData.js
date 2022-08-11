@@ -58,7 +58,7 @@ class EmployeePayrollData {
         } else {
             let differnce = Math.abs(currentDate.getTime() - startDate.getTime());
             let date = differnce / (1000 * 60 * 60 * 24);
-            if (date < 30) {
+            if (date > 30) {
                 throw "Start date is beyond 30 days";
             }
         }
